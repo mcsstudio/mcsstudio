@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows UI Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-image 1s ease-in-out;
+        }
+        .buttons {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #0078D7;
+            color: white;
+        }
+        .buttons button:hover {
+            background-color: #005BB5;
+        }
+    </style>
+</head>
+<body>
+    <div class="taskbar">
+        <button class="start-btn">Start</button>
+        <input type="file" id="bgInput" accept="image/*">
+    </div>
+    
+    <div class="start-menu hidden">
+    </div>
+    
+    <div class="buttons">
+        <button onclick="alert('Mở File Explorer')">File Explorer</button>
+        <button onclick="alert('Mở Settings')">Settings</button>
+        <button onclick="alert('Mở Notepad')">Notepad</button>
+    </div>
+    
+    <script>
+        document.getElementById('bgInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.body.style.backgroundImage = `url('${e.target.result}')`;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
