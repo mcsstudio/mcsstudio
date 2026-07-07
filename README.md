@@ -24,7 +24,7 @@ A next-generation operating system powered by the proprietary **MCScript** Encry
 
 ### 📱 Connect with MCS Studio
 Follow our journey of "tinkering" and the evolution of AirsOS here:
-- 🎵 **TikTok Main:** [@mcs.studio_](https://www.tiktok.com/@mcs.studio_) - Project updates & coding.
+- 🎵 **TikTok Main:** [@mcs.studio_](https://www.tiktok.com/@hatsune_miku_31.08) - Project updates & coding.
 - 🎵 **TikTok Hardware:** [@afs.studio_](https://www.tiktok.com/@afs.studio_) - Hardware modding & tech reviews.
 
 ---
